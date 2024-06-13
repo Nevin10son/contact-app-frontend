@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavBar from './NavBar'
 
 const ViewAll = () => {
     
@@ -14,6 +15,7 @@ const ViewAll = () => {
         useEffect(()=>(fetchData()),[])
   return (
     <div>
+        <NavBar/>
        <h1>View Contacts</h1>
       <div className="container">
         <div className="row">
