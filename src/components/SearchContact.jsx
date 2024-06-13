@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavBar from './NavBar'
 
 const SearchContact = () => {
     const [con,setcon] =useState(
@@ -36,6 +37,7 @@ const SearchContact = () => {
     }
   return (
     <div>
+        <NavBar/>
       <h1>Search Contact</h1>
       <div className="container">
         <div className="row">
